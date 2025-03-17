@@ -28,7 +28,7 @@ public class HelloResource {
 		return "Hello World!";
 	}
 	
-	@PostMapping("/authenticate")
+	@PostMapping("/authenticate")	// get jwt
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
 		try {
 			authenticationManager.authenticate(
